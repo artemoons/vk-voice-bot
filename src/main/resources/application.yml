@@ -1,1 +1,11 @@
-
+integration:
+  vk:
+    api-url: https://api.vk.com
+    api-token: 
+    api-version: 5.131
+  telegram:
+    api-url: https://api.telegram.org
+    bot-token:
+telegram:
+  bot:
+    name: Voicemaster

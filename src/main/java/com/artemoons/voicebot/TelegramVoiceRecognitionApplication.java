@@ -1,12 +1,20 @@
-package com.example.voicebot;
+package com.artemoons.voicebot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Класс запуска бота.
+ */
 @SpringBootApplication
 public class TelegramVoiceRecognitionApplication {
 
-    public static void main(String[] args) {
+    /**
+     * Метод для запуска Spring Boot приложения.
+     *
+     * @param args аргументы
+     */
+    public static void main(final String[] args) {
         SpringApplication.run(TelegramVoiceRecognitionApplication.class, args);
     }
 
