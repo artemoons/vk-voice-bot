@@ -1,4 +1,4 @@
-package com.artemoons.voicebot.dto;
+package com.artemoons.voicebot.dto.tg;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

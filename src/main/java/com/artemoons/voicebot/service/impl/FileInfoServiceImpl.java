@@ -1,6 +1,6 @@
 package com.artemoons.voicebot.service.impl;
 
-import com.artemoons.voicebot.dto.FileResponse;
+import com.artemoons.voicebot.dto.tg.FileResponse;
 import com.artemoons.voicebot.service.FileInfoService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;

@@ -1,32 +1,24 @@
-package com.artemoons.voicebot.dto;
+package com.artemoons.voicebot.dto.vk;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
- * todo.
+ * Todo.
  */
 @Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class TextResponse {
+public class AsrResult {
 
     /**
      * todo.
      */
-    private String id;
-
-    /**
-     * todo.
-     */
-    private String status;
-
-    /**
-     * todo.
-     */
-    private String text;
+    @JsonProperty("response")
+    private TextResponse response;
 
 }

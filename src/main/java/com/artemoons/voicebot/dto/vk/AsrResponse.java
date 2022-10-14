@@ -1,4 +1,4 @@
-package com.artemoons.voicebot.dto;
+package com.artemoons.voicebot.dto.vk;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -7,18 +7,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
- * todo.
+ * DTO ответа от сервиса распознавания речи.
  */
 @Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UploadURL {
+public class AsrResponse {
 
     /**
-     * todo.
+     * Ответ.
      */
-    @JsonProperty("upload_url")
-    private String uploadUrl;
+    @JsonProperty("response")
+    private TaskInfo response;
 
 }

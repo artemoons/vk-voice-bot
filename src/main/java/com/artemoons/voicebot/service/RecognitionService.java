@@ -1,11 +1,12 @@
 package com.artemoons.voicebot.service;
 
+import com.artemoons.voicebot.dto.vk.TextResponse;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 /**
  * Интерфейс для взаимодействия с сервисов распознавания речи от ВК.
  */
-public interface AsrService {
+public interface RecognitionService {
 
     /**
      * Метод для получения ссылки для отправки голосового сообщения.
@@ -20,7 +21,7 @@ public interface AsrService {
      * @param voiceMessage сообщение из Telegram, которое содержит голосовое сообщение
      * @return результат отправки голосового сообщения
      */
-    String sendToAsr(Update voiceMessage);
+    String sendToRecognition(Update voiceMessage);
 
     /**
      * Метод для запуска процесса распознавания голосового сообщения.
@@ -28,7 +29,7 @@ public interface AsrService {
      * @param messageInfo информация о голосовом сообщении, полученная от ВК
      * @return ИД задачи
      */
-    String processVoice(String messageInfo);
+    String startVoiceRecognition(String messageInfo);
 
     /**
      * Метод для получения реузльтатов распознавания.
@@ -36,6 +37,15 @@ public interface AsrService {
      * @param taskId идентификатор задачи
      * @return текст сообщения
      */
-    String getText(String taskId);
+
+    TextResponse getResponseFromService(String taskId);
+
+    /**
+     * Метод для опроса контроллера получения результатов распознавания.
+     *
+     * @param taskId идентификатор задачи
+     * @return текст сообщения
+     */
+    String pollForText(String taskId);
 
 }

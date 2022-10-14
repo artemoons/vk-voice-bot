@@ -17,7 +17,7 @@ import javax.annotation.PostConstruct;
  */
 @Slf4j
 @Component
-public class BotRegisterComponent {
+public class BotRegistrarComponent {
 
     /**
      * Обёртка над исполнителем действий.
@@ -42,7 +42,7 @@ public class BotRegisterComponent {
      * @param actionWrapper обёртка над исполнителем действий
      */
     @Autowired
-    public BotRegisterComponent(final ActionWrapper actionWrapper) {
+    public BotRegistrarComponent(final ActionWrapper actionWrapper) {
         this.wrapper = actionWrapper;
     }
 

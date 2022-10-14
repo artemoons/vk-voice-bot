@@ -1,8 +1,9 @@
 integration:
   vk:
     api-url: https://api.vk.com
-    api-token: 
+    api-token:
     api-version: 5.131
+    poll-interval: 3000
   telegram:
     api-url: https://api.telegram.org
     bot-token:

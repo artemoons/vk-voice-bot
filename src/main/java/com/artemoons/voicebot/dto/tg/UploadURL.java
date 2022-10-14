@@ -1,4 +1,4 @@
-package com.artemoons.voicebot.dto;
+package com.artemoons.voicebot.dto.tg;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Response {
+public class UploadURL {
 
     /**
      * todo.
      */
-    @JsonProperty("response")
-    private UploadURL response;
+    @JsonProperty("upload_url")
+    private String uploadUrl;
 
 }
